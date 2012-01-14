@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Elevator Simulation</title>
+</head>
+<body style="background-color: #EEEEEE;"><br /><br /><br /><br /><center>
+<applet code="Elevator_Simulation.class" width="700" height="500">
+<param name=NUM_OF_FLOORS value=8>
+<param name=ENABLE_ADVANCED_OPTIONS value=true>
+</applet></center>
+<br /><br />
+<b>OPTIONS INFORMATION:</b><br />
+<table width="100%" border="1" cellpadding="4">
+      <tr>
+        <td width="21%">Optimised Movement</td>
+        <td width="79%">This is in accordance to 3.3 (LAB 2) requirements. Elevator will skip uppermost and/or lowermost floors should there be no further floors above or below to serve after searving a particular floor.</td>
+      </tr>
+      <tr>
+        <td>Active Scan</td>
+        <td>The elevator will constantly scan all floors and immediately head towards the floor with an active button if it is not already on its way to serve a floor.</td>
+      </tr>
+      <tr>
+        <td>Energy Saving</td>
+        <td>Elevator will pause at the nearest floor or the last served floor and await further active buttons before moving. 'Energy Saving' mode.</td>
+      </tr>
+      <tr>
+        <td>Drop Off</td>
+        <td>Passengers are dropped off at their desired floor in addition to just being picked up. Floor to drop them off is decided randomly for now.</td>
+      </tr>
+    </table>
+<br /><br />
+<b>FLOOR BUTTON LEGEND:</b><br />
+<table width="100%" border="1" cellpadding="4">
+      <tr>
+        <td>RED</td>
+        <td>Floor selected for pickup of passengers.</td>
+      </tr>
+      <tr>
+        <td>GREEN</td>
+        <td>Floor has passengers that need to be dropped off at.</td>
+      </tr>
+      <tr>
+        <td>ORANGE</td>
+        <td>Floor has BOTH passengers to pickup and dropoff.</td>
+      </tr>
+    </table>
+
+</body>
+</html>
